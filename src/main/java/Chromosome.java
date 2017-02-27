@@ -39,6 +39,19 @@ public class Chromosome {
         this.fitness = score.floatValue() / target.length();
     }
 
+    public Chromosome crossover(Chromosome partner){
+        Chromosome child = new Chromosome(this.genes.length);
+        Random r = new Random();
+        int midpoint = r.nextInt((this.genes.length)+1);
+        for (int i = 0; i < this.genes.length; i++){
+            if (i > midpoint)
+                child.genes[i] = this.genes[i];
+            else
+                child.genes[i] = partner.genes[i];
+        }
+        return child;
+    }
+
     @Override
     public String toString() {
         return "Chromosome{" +
