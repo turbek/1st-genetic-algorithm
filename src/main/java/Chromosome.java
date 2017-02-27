@@ -16,7 +16,6 @@ public class Chromosome {
     private char generateGene(){
         Random r = new Random();
         int value = r.nextInt((122 - 32) + 1) + 32;
-        System.out.println(value);
         char randomChar = (char)value;
         return randomChar;
     }
