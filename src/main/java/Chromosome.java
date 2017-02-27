@@ -5,8 +5,10 @@ import java.util.Random;
  * Created by turbek on 27.02.17.
  */
 public class Chromosome {
-    int length;
-    char[] genes;
+    private int length;
+    private char[] genes;
+    public float fitness;
+
 
     Chromosome(int length){
         this.length = length;
@@ -26,6 +28,15 @@ public class Chromosome {
             genes[i] = generateGene();
         }
         return genes;
+    }
+
+    public void checkFitness(String target){
+        Integer score = 0;
+        for(int i = 0; i < this.genes.length; i++){
+            if(this.genes[i] == target.charAt(i))
+                score++;
+        }
+        this.fitness = score.floatValue() / target.length();
     }
 
     @Override
