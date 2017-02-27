@@ -6,5 +6,5 @@ Steps
 - Chromosome
 - Fitness
 - Mating pool?
-- Chosing parents
--
+- Choose parents
+- ...
