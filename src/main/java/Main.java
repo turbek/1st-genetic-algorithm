@@ -4,7 +4,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Chromosome chromosome = new Chromosome(10);
-        System.out.println(chromosome);
+        Population population = new Population(100, 1, "asdasd");
+        System.out.println(population.toString());
     }
 }

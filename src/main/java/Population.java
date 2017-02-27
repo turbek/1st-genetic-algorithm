@@ -4,14 +4,14 @@ import java.util.ArrayList;
  * Created by turbek on 27.02.17.
  */
 public class Population {
-    private ArrayList<Chromosome> population;
+    private ArrayList<Chromosome> population = new ArrayList<>();
     private int popMax;
-    private int mutation;
+    private double mutation;
     private String target;
 
-    Population(int popMax, int mutation, String target){
+    Population(int popMax, Integer mutationRate, String target){
         this.popMax = popMax;
-        this.mutation = mutation;
+        this.mutation = mutationRate.doubleValue()/100;
         this.target = target;
         generatePopulation();
     }
@@ -22,5 +22,10 @@ public class Population {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Population{" +
+                "population=" + population +
+                '}';
+    }
 }
