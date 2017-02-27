@@ -7,7 +7,7 @@ import java.util.Random;
 public class Chromosome {
     private int length;
     private char[] genes;
-    public float fitness;
+    public double fitness;
 
 
     Chromosome(int length){
@@ -50,6 +50,13 @@ public class Chromosome {
                 child.genes[i] = partner.genes[i];
         }
         return child;
+    }
+
+    public void mutate(double mutation) {
+        for(int i = 0; i < this.genes.length; i++){
+            if(Math.random() <= mutation)
+                this.genes[i] = generateGene();
+        }
     }
 
     @Override
