@@ -1,5 +1,5 @@
 # genalgo
-My first try in genetic algorithms
+My first try in genetic algorithms in Java 8 with Maven.
 
 If you're interested:
 
@@ -10,4 +10,4 @@ optimization problems, in research, and in machine learning."
 - https://www.tutorialspoint.com/genetic_algorithms/genetic_algorithms_introduction.htm
 
 
-This java program is looking for a match of the TARGET string in Main.
+This java program is looking for the TARGET string using natural selection.
