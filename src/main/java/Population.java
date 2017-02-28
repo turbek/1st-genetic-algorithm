@@ -38,7 +38,6 @@ public class Population {
     }
 
     public void matingPool() {
-
         this.matingPool = new ArrayList<>();
         for(int i = 0; i < this.popMax; i++) {
             Double mateNumFloat = this.population[i].fitness / maxFitness * 100;
@@ -75,3 +74,4 @@ public class Population {
                 '}';
     }
 }
+
