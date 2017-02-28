@@ -2,8 +2,8 @@
  * Created by turbek on 27.02.17.
  */
 public class Main {
-    static String TARGET_STRING = "Balazs olyan okos!";
-    static double MUTATION_RATE = 0.01;
+    static String TARGET_STRING = "My first try!";
+    static double MUTATION_RATE = 0.02;
     static int POPULATION_MAX = 200;
 
     public static void main(String[] args) {
